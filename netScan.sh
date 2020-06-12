@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-
+#Completamente inutil por eso de que puedes hacer nmap -sP <ip>/<mask>; pero como prueba de concepto ni tan mal.
 trap ctrl_c INT
 
 function ctrl_c(){
