@@ -11,4 +11,4 @@ ports=$(cat tmpScan | grep -oP '\d{1,5}/open' | awk '{print $1}' FS='/' | xargs 
 rm tmpScan
 
 echo -e '[*]Analizando puertos...\n'
-nmap -Pn -n -sV -sC -p$ports $1 -oN fullScan
+nmap -Pn -n -v -sV -sC -p$ports $1 -oN fullScan
